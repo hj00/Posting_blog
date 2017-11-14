@@ -1,0 +1,7 @@
+<h1>Main</h1>
+<a href="/user/new">Sign Up</a>
+<a href="/user/login_form">Login</a><br/><hr/>
+<a href="/post/new">Post</a>
+<% @posts.each do |p| %>
+    <p>p.title || p.user_id</p>
+<% end %>

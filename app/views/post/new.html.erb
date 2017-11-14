@@ -1,0 +1,8 @@
+<h1>Posting Page</h1>
+<%= form_tag({controller: "post", action: "create"}, action: "post") do %>
+    <%= label_tag(:title, "Title : ") %>
+    <%= text_field_tag(:title) %><br/>
+    <%= label_tag(:content, "Content") %><br/>
+    <%= text_area_tag(:content) %>
+    <%= submit_tag("POST") %>
+<% end %>
